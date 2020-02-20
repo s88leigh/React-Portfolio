@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content} from 'react-mdl';
+import Main from './Components/main';
+import {Link} from 'react-router-dom';
 
 class App extends Component {
 
@@ -10,36 +11,30 @@ class App extends Component {
 
     return (
   
-      // <!-- Always shows a header, even in smaller screens. -->
-      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
-          <div class="mdl-layout__header-row">
-            {/* <!-- Title --> */}
-            <span class="mdl-layout-title">Title</span>
-            {/* <!-- Add spacer, to align navigation to the right --> */}
-            <div class="mdl-layout-spacer"></div>
-            {/* <!-- Navigation. We hide it in small screens. --> */}
-            <nav class="mdl-navigation mdl-layout--large-screen-only">
-              <a class="mdl-navigation__link" href="">Link</a>
-              <a class="mdl-navigation__link" href="">Link</a>
-              <a class="mdl-navigation__link" href="">Link</a>
-              <a class="mdl-navigation__link" href="">Link</a>
-            </nav>
-          </div>
-        </header>
-        <div class="mdl-layout__drawer">
-          <span class="mdl-layout-title">Title</span>
-          <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-          </nav>
-        </div>
-        <main class="mdl-layout__content">
-          <div class="page-content"></div>
-        </main>
-      </div>
+      <div className="demo-big-content">
+      <Layout>
+      <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Portfolio</Link>} scroll>
+              <Navigation>
+                  <Link to="/resume">Resume</Link>
+                  <Link to="/aboutme">About Me</Link>
+                  <Link to="/contacts">Contact</Link>
+                  <Link to="/projects">Projects</Link>
+                </Navigation>
+          </Header>
+          <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">Portfolio</Link>}>
+              <Navigation>
+                  <Link to="/resume">Resume</Link>
+                  <Link to="/aboutme">About Me</Link>
+                  <Link to="/contacts">Contact</Link>
+                  <Link to="/projects">Projects</Link>
+              </Navigation>
+          </Drawer>
+          <Content>
+              <div className="page-content" />
+              <Main/>
+          </Content>
+      </Layout>
+  </div>
     );
   }
 }
