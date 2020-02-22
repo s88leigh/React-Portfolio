@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import 'react-mdl/extra/material.css';
-import 'react-mdl/extra/material.js';
+import 'materialize-css/dist/css/materialize.min.css';
 import { BrowserRouter } from 'react-router-dom';
 
 
