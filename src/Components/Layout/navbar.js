@@ -24,7 +24,7 @@ export default class Navbar extends Component {
                         <ul id="nav-mobile" className="right hide-on-med-and-down">
                             <li><Link to="/">About</Link></li> 
                             <li><Link to="/projects">Projects</Link></li>
-                            <li><Link to="/resume">Resume</Link></li>
+                            <li><Link to="/contact">Contact</Link></li>
                         </ul>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './footer.css';
+import resume from '../../assets/images/Resume_UNH.pdf';
 
 export default class Footer extends Component {
     render() {
@@ -10,10 +11,9 @@ export default class Footer extends Component {
           <div class="container">
             <div class="row">
               
-                <a class="grey-text text-lighten-3" href="#!"> Github </a>
-                <a class="grey-text text-lighten-3" href="#!"> Linkedin </a>
-                <a class="grey-text text-lighten-3" href="#!"> Contact </a>
-                <a class="grey-text text-lighten-3" href="#!"> Resume </a>
+                <a class="grey-text text-lighten-3" href="https://github.com/s88leigh" > Github </a>
+                <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/sophie-leigh-224182bb/"> Linkedin </a>
+                <a class="grey-text text-lighten-3" href={resume}> Resume </a>
                
             </div>
           </div>

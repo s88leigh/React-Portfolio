@@ -1,71 +1,66 @@
 import React, { Component } from 'react'
 import recipe from '../../assets/images/recipeGenerator.PNG';
-// import github from '../../assets/images/github.png';
-// import github from '../../assets/images/github.png';
+import rewards from '../../assets/images/rewards.PNG';
+import planner from '../../assets/images/day-planner.PNG';
 
 export default class Projects extends Component {
     render() {
         return (
-            <div>
-               
-                {/* <img src={github} alt="" /> */}
-                <div class="row">
-                    <div class="col s4 m4 ">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src={recipe} alt=""/>
+            <div className="container">
+                <div className="row">
+                    <div className="col s12 m4 12">
+                        <div className="card">
+                            <div className="card-image">
+                                <img src={recipe} alt="" />
                             </div>
-                                <div class="card-content">
-                                <h5 class="card-title">Recipe Generator</h5>
-                            <p class="card-text">This App allows the user to generate recipes with the ingredients in the fridge.
-                            </p>
+                            <div className="card-content">
+                                <h5 className="card-title">Recipe Generator</h5>
+                                <p className="card-text">This App allows the user to generate recipes with the ingredients in the fridge.</p>
+                            </div>
+                            <div className="card-action">
+                                <a href="https://andyrich75.github.io/Project1/">Click this link</a>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div className="col s12 m4 12">
+                        <div className="card">
+                            <div className="card-image">
+                                <img src={rewards} alt="" />
+                                <div className="card-content">
+                                    <h5 className="card-title">Rewards</h5>
+                                    <p className="card-text">This fun interactive points-based app aims to motivate kids 12yrs and
+                                        younger to help with chores around the house.  With enough earned points, the child can choose a
+                                        reward of his/her choice. This app keeps track of points earned and used.
+                                    </p>
                                 </div>
-                                <div class="card-action">
-                                    <a href="https://andyrich75.github.io/Project1/">Click this link</a>
+                                <div className="card-action">
+                                    <a href="http://enigmatic-caverns-81757.herokuapp.com/kid.html">Click this link</a>
                                 </div>
                             </div>
                         </div>
-                    {/* </div> */}
+                    </div>
 
-                    {/* <div class="row"> */}
-                    <div class="col s4 m4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/sample-1.jpg"/>
-                                    <span class="card-title">Card Title</span>
-                            </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
+                    <div className="col s12 m4 12">
+                        <div className="card">
+                            <div className="card-image">
+                                <img src={planner} alt="" />
                                 </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                <div className="card-content">
+                                    <h5 className="card-title">Day Planner</h5>
+                                    <p className="card-text">This App allows the user to plan their day during normal 9-5 work hours. It also displays current date and time. </p>
                                 </div>
-                            </div>
-                        </div>
-                    {/* </div> */}
-
-                    {/* <div class="row"> */}
-                    <div class="col s4 m4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/sample-1.jpg"/>
-                                    <span class="card-title">Card Title</span>
-                            </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                <div className="card-action">
+                                    <a href="https://s88leigh.github.io/Day-Planner/">Click this link</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            
+           
+           
         )
     }
 }
-        
-        
+
+
