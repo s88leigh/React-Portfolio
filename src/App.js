@@ -5,6 +5,7 @@ import Footer from './Components/Layout/footer';
 import About from './Components/Pages/about';
 import Projects from './Components/Pages/projects';
 import Resume from './Components/Pages/resume';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
 
@@ -12,15 +13,20 @@ class App extends Component {
 
 
     return (
-  
+
       <div >
-      <Navbar />
-    
-      <About />
-      <Projects />
-      <Resume />
-      <Footer/>
-    
+        <Navbar />
+        <Router>
+          <Switch>
+            <Route exact path="/"> <About /></Route>
+            
+            <Route exact path="/projects"> <Projects /></Route>
+           
+            <Route exact path="/resume"> <Resume /></Route>
+
+          </Switch>
+        </Router>  
+        <Footer />
       </div>
     );
   }
