@@ -18,11 +18,11 @@ class App extends Component {
         <Navbar />
         <Router>
           <Switch>
-            <Route exact path="/"> <About /></Route>
+            <Route exact path="/about"> <About /></Route>
             
             <Route exact path="/projects"> <Projects /></Route>
            
-            <Route exact path="/resume"> <Resume /></Route>
+            <Route exact path="/contact"> <Resume /></Route>
 
           </Switch>
         </Router>  

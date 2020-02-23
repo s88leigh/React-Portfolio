@@ -6,9 +6,7 @@ export default class About extends Component {
     render() {
         return (
             <div className="container">
-                {/* <div className="col s4 s12"> */}
-                    {/* <img className="circle" className="col s4 s12"></img>src={sophie} alt="" /> */}
-                {/* </div> */}
+               
                 <h2 className="header">About me</h2>
                 <div className="card horizontal">
                     <div className="card-image">
@@ -19,7 +17,7 @@ export default class About extends Component {
 
                         <p className="card-text">
                                 I'm excited to become a web developer!
-                                   
+                                <br/>   
                                     For the past several years, I took some time off to invest in my children, but am
                                         looking to
                                         make my return to the workplace with a new career path. Now that my children are more

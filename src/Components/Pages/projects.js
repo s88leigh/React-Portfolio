@@ -7,6 +7,7 @@ export default class Projects extends Component {
     render() {
         return (
             <div className="container">
+                <h2 className="header">Projects</h2>
                 <div className="row">
                     <div className="col s12 m4 12">
                         <div className="card">

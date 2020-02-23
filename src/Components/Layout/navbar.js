@@ -3,6 +3,7 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 import {Link} from 'react-router-dom';
 import sophie from '../../assets/images/sophie.png';
 
+
 export default class Navbar extends Component {
 
     componentDidMount() {
@@ -22,9 +23,8 @@ export default class Navbar extends Component {
 
                         <a href="#" className="brand-logo">Sophie Leigh</a>
                         <ul id="nav-mobile" className="right hide-on-med-and-down">
-                            <li><Link to="/">About</Link></li> 
+                            <li><Link to="/about">About</Link></li> 
                             <li><Link to="/projects">Projects</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>
                         </ul>
                         </div>
                     </div>
@@ -43,16 +43,15 @@ export default class Navbar extends Component {
                         </div>
                     </li>
                             
-                            <li><Link to="#!">About</Link></li>
-                            <li><Link to="#!">Projects</Link></li>
-                            <li><Link to="#!">Resume</Link></li>
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/projects">Projects</Link></li>
+                            
                             <li><div className="divider"></div></li>
                            
-                            <li><a className="subheader">Subheader</a></li>
-                            <li><Link to="#!"><i className="material-icons">email</i></Link></li> 
-                            <li><Link to="#!">Linkedin</Link></li>
-                            <li><Link to="#!">gitHub</Link></li>
-                            <li><Link to="#!">Resume</Link></li>
+                            {/* <li><Link to="#!"><i className="material-icons"></i></Link></li>  */}
+                            <li><a href="https://github.com/s88leigh" > Github </a></li>
+                            <li><a href="https://www.linkedin.com/in/sophie-leigh-224182bb/"> Linkedin </a></li>
+                          
                 </ul>
             </div>
 
