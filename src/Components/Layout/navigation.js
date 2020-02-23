@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import sophie from '../../assets/images/sophie.png';
 
 
-export default class Navbar extends Component {
+export default class Navigation extends Component {
 
     componentDidMount() {
             document.addEventListener('DOMContentLoaded', function () {
@@ -50,7 +50,7 @@ export default class Navbar extends Component {
                            
                             {/* <li><Link to="#!"><i className="material-icons"></i></Link></li>  */}
                             <li><a href="https://github.com/s88leigh" > Github </a></li>
-                            <li><a href="https://www.linkedin.com/in/sophie-leigh-224182bb/"> Linkedin </a></li>
+                            <li><a href="https://www.Linkedin.com/in/sophie-leigh-224182bb/"> Linkedin </a></li>
                           
                 </ul>
             </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './about.css';
+
 import sophie from '../../assets/images/sophie.png';
 
 export default class About extends Component {
